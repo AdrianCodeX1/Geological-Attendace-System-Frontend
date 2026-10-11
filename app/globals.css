@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand palette — mirrors tailwind.config.ts */
+  --brand-50:  #eef6ff;
+  --brand-100: #d9ecff;
+  --brand-200: #bcdcff;
+  --brand-300: #8ec7ff;
+  --brand-400: #59a7ff;
+  --brand-500: #3385ff;
+  --brand-600: #1f66f5;
+  --brand-700: #1a4fe1;
+  --brand-800: #1c41b6;
+  --brand-900: #1c3b8f;
+
+  /* Attendance status colors — mirror the DB enum values */
+  --status-present:  #16a34a;
+  --status-late:     #d97706;
+  --status-rejected: #dc2626;
+
+  /* Live badge background (used by the lecturer session screen) */
+  --live-bg:   #fee2e2;
+  --live-fg:   #b91c1c;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f8fafc;           /* slate-50 */
+  color: #0f172a;                      /* slate-900 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent iOS Safari from zooming when focusing an input (font-size < 16px triggers zoom). */
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+}
